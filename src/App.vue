@@ -32,6 +32,8 @@
 					<!-- <Home />
 					<About /> -->
 					<router-view></router-view>
+					<router-view name="h1"></router-view>
+					<router-view name="h2"></router-view>
 				</div>
 			</div>
 		</div>

@@ -3,15 +3,24 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../pages/Home.vue'
 import About from '../pages/About.vue'
+import Home2 from '../pages/Home2.vue'
 Vue.use(VueRouter)
 
 //创建一个路由器, 管理所有的路由
 
 const router = new VueRouter({
 	routes: [
+		// {
+		// 	path: '/home',
+		// 	component: Home
+		// },
+		//?一个路由匹配多个组件
 		{
 			path: '/home',
-			component: Home
+			components: {
+				h1: Home,
+				h2: Home2
+			}
 		},
 		{
 			path: '/about',
